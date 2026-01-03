@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #1a2a6c, #0d1b2a);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.glassCard {
+  background: #ffffff;
+  padding: 3.5rem 2.5rem; 
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border-top: 6px solid #0056b3;
+
+  min-height: 500px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.glassCard h2 {
+  color: #0d1b2a;
+  margin: 0 0 10px 0; 
+  font-size: 2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fdfdfd;
+  box-sizing: border-box; 
+  margin: 10px 0;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #0056b3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.glassCard h2 {
+  color: #0d1b2a; 
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin: 30px 0; 
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fdfdfd;
+}
+
+.input:focus {
+  border-color: #0056b3;
+  background: #ffffff;
+}
+
+.input::placeholder { 
+  color: #adb5bd; 
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #0056b3; 
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #003d80;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+}

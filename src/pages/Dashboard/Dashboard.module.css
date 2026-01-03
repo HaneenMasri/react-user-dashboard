@@ -1,0 +1,38 @@
+/* src/pages/Dashboard/Dashboard.module.css */
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f4f7f6;
+  padding: 40px 5%;
+  display: block; /* غيرناه من flex لضمان عدم انكماش العناصر */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* يضع العنوان يميناً والزر يساراً */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: #0d1b2a;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.viewProfileBtn {
+  background: #0056b3;
+  color: white;
+  border: none;
+  /* padding: 12px 24px; */
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap; /* يمنع النص داخل الزر من النزول لسطرين */
+  padding: 10px 20px;
+}
