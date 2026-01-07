@@ -5,109 +5,72 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at center, #1a2a6c, #0d1b2a);
+  background: radial-gradient(circle at center, #1a2a6c, #000000);
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
 }
-title {
-  margin: 0; 
-  line-height: 1;
-}
-
-.profileCard {
- 
-  background: #ffffff;
-  padding: 3.5rem 2.5rem;
+.card {
+  background: white;
+  padding: 3rem;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 100%;
   max-width: 400px;
-  border-top: 6px solid #0056b3;
-  min-height: 500px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  gap: 20px; 
 }
 
 .avatar {
-  width: 90px;
-  height: 90px;
-  background: #0056b3;
+  width: 100px;
+  height: 100px;
+  background: #2563eb;
   color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.2rem;
-  font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
 }
 
-.infoGroup {
-  text-align: center;
+.username {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
 
-.infoGroup span {
-  color: #adb5bd;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.infoGroup p {
-  color: #0d1b2a;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 5px 0 0 0;
-}
-
-.actions {
+.buttonGroup {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 100%;
+  gap: 1rem;
 }
 
 .backBtn, .logoutBtn {
-  width: 100%;
-  padding: 14px;
-  border-radius: 8px;
+  padding: 0.8rem;
   border: none;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .backBtn {
-  background: #f8f9fa;
-  color: #0056b3;
-  border: 1px solid #e9ecef;
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.backBtn:hover {
+  background-color: #e5e7eb;
 }
 
 .logoutBtn {
-  background: #dc3545;
+  background-color: #ef4444; 
   color: white;
 }
 
 .logoutBtn:hover {
-  background: #c82333;
+  background-color: #dc2626;
   transform: translateY(-2px);
-}
-.headerSection {
-  display: flex;
-  flex-direction: row; 
-  align-items: center; 
-  justify-content: center;
-  gap: 20px; 
-  width: 100%;
-  margin-bottom: 30px;
-}
-.nameDisplay p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
-  margin: 10px 0 20px 0;
 }

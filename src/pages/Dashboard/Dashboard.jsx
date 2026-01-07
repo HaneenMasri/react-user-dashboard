@@ -1,12 +1,19 @@
-// src/pages/Dashboard/Dashboard.jsx
-import { useLoaderData, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import UserList from '../../components/Dashboard/UserList/UserList';
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
-  // جلب البيانات التي تم تحميلها مسبقاً بواسطة الـ loader في App.js
-  const users = useLoaderData(); 
+  const [users, setUsers] = useState([]); 
   const navigate = useNavigate();
+
+  // 1. Fetch users using useEffect
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(res => setUsers(res.data))
+      .catch(err => console.error("Error fetching users:", err));
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -16,8 +23,6 @@ const Dashboard = () => {
           View Profile
         </button>
       </header>
-
-      {/* لم نعد بحاجة لشرط loading لأن الصفحة لا تفتح إلا والبيانات جاهزة */}
       <main className={styles.mainContent}>
         <UserList users={users} />
       </main>

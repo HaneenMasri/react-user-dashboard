@@ -4,14 +4,14 @@
   width: 100vw;
   background-color: #f4f7f6;
   padding: 40px 5%;
-  display: block; /* غيرناه من flex لضمان عدم انكماش العناصر */
+  display: block; 
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .header {
   display: flex;
-  justify-content: space-between; /* يضع العنوان يميناً والزر يساراً */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   margin-bottom: 40px;
@@ -33,6 +33,6 @@
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  white-space: nowrap; /* يمنع النص داخل الزر من النزول لسطرين */
+  white-space: nowrap; 
   padding: 10px 20px;
 }

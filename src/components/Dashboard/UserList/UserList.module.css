@@ -1,7 +1,6 @@
 /* src/components/Dashboard/UserList/UserList.module.css */
 .grid {
   display: grid;
-  /* تقسيم الصفحة لثلاث أو أربع أعمدة حسب عرض الشاشة */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
   width: 100%;
