@@ -1,6 +1,6 @@
 import styles from "./UserCard.module.css";
 
-const UserCard = ({ user }) => {
+const UserCard = ({ user  }) => {
   return (
     <div className={styles.card}>
       <h3>{user.name}</h3>
