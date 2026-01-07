@@ -9,7 +9,7 @@ export const routes = [
   {
     path: "/login",
     element: (
-      <DashboardGuard role="guest">
+      <DashboardGuard role="public">
         <Login />
       </DashboardGuard>
     ),
@@ -17,7 +17,7 @@ export const routes = [
   {
     path: "/dashboard",
     element: (
-      <DashboardGuard role="private">
+      <DashboardGuard role="protected">
         <Dashboard />
       </DashboardGuard>
     ),
@@ -25,7 +25,7 @@ export const routes = [
   {
     path: "/profile",
     element: (
-      <DashboardGuard role="private">
+      <DashboardGuard role="protected">
         <Profile />
       </DashboardGuard>
     ),
